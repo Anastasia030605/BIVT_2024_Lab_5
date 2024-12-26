@@ -985,5 +985,254 @@ public class Program
 
         return matrix;
     }
+
+    public void Task_2_2(double[] A, double[] B)
+    {
+        // code here
+
+        // create and use FindMaxIndex(array);
+        // only 1 array has to be changed!
+
+        // end
+    }
+    public void Task_2_4(int[,] A, int[,] B)
+    {
+        // code here
+
+        //  create and use method FindDiagonalMaxIndex(matrix); like in Task_2_3
+
+        // end
+    }
+
+
+    public void Task_2_6(ref int[] A, int[] B)
+    {
+        // code here
+
+        // create and use FindMax(matrix, out row, out column); like in Task_2_1
+        // create and use DeleteElement(array, index);
+
+        // end
+    }
+    public void Task_2_8(int[] A, int[] B)
+    {
+        // code here
+
+        // create and use SortArrayPart(array, startIndex);
+
+        // end
+    }
+    public void Task_2_10(ref int[,] matrix)
+    {
+        // code here
+
+        // create and use RemoveColumn(matrix, columnIndex);
+
+        // end
+    }
+    public void Task_2_12(int[,] A, int[,] B)
+    {
+        // code here
+
+        // create and use FindMaxColumnIndex(matrix);
+
+        // end
+    }
+    public void Task_2_14(int[,] matrix)
+    {
+        // code here
+
+        // create and use SortRow(matrix, rowIndex);
+
+        // end
+    }
+
+    public void Task_2_16(int[] A, int[] B)
+    {
+        // code here
+
+        // create and use SortNegative(array);
+
+        // end
+    }
+
+
+    public void Task_2_18(int[,] A, int[,] B)
+    {
+        // code here
+
+        // create and use SortDiagonal(matrix);
+
+        // end
+    }
+    public void Task_2_20(ref int[,] A, ref int[,] B)
+    {
+        // code here
+
+        // use RemoveColumn(matrix, columnIndex); from 2_10
+
+        // end
+    }
+
+    public void Task_2_22(int[,] matrix, out int[] rows, out int[] cols)
+    {
+        rows = null;
+        cols = null;
+
+        // code here
+
+        // create and use CountNegativeInRow(matrix, rowIndex);
+        // create and use FindMaxNegativePerColumn(matrix);
+
+        // end
+    }
+
+    public void Task_2_24(int[,] A, int[,] B)
+    {
+        // code here
+
+        // use FindMaxIndex(matrix, out row, out column); like in 2_1
+        // create and use SwapColumnDiagonal(matrix, columnIndex);
+
+        // end
+    }
+
+    public void Task_2_26(int[,] A, int[,] B)
+    {
+        // code here
+
+        // create and use FindRowWithMaxNegativeCount(matrix); like in 2_25
+        // in FindRowWithMaxNegativeCount use CountNegativeInRow(matrix, rowIndex); from 2_22
+
+        // end
+    }
+    public void Task_2_28a(int[] first, int[] second, ref int answerFirst, ref int answerSecond)
+    {
+        // code here
+
+        // create and use FindSequence(array, A, B); // 1 - increasing, 0 - no sequence,  -1 - decreasing
+        // A and B - start and end indexes of elements from array for search
+
+        // end
+    }
+
+    public void Task_2_28b(int[] first, int[] second, ref int[,] answerFirst, ref int[,] answerSecond)
+    {
+        // code here
+
+        // use FindSequence(array, A, B); from Task_2_28a or entirely Task_2_28a
+        // A and B - start and end indexes of elements from array for search
+
+        // end
+    }
+
+    public void Task_2_28c(int[] first, int[] second, ref int[] answerFirst, ref int[] answerSecond)
+    {
+        // code here
+
+        // use FindSequence(array, A, B); from Task_2_28a or entirely Task_2_28a or Task_2_28b
+        // A and B - start and end indexes of elements from array for search
+
+        // end
+    }
+    public void Task_3_2(int[,] matrix)
+    {
+        // SortRowStyle sortStyle = default(SortRowStyle); - uncomment me
+
+        // code here
+
+        // create and use public delegate SortRowStyle(matrix, rowIndex);
+        // create and use methods SortAscending(matrix, rowIndex) and SortDescending(matrix, rowIndex)
+        // change method in variable sortStyle in the loop here and use it for row sorting
+
+        // end
+    }
+
+
+    public int Task_3_4(int[,] matrix, bool isUpperTriangle)
+    {
+        int answer = 0;
+
+        // code here
+
+        // create and use public delegate GetTriangle(matrix);
+        // create and use methods GetUpperTriange(array) and GetLowerTriange(array)
+        // create and use GetSum(GetTriangle, matrix)
+
+        // end
+
+        return answer;
+    }
+
+    public void Task_3_6(int[,] matrix)
+    {
+        // code here
+
+        // create and use public delegate FindElementDelegate(matrix);
+        // use method FindDiagonalMaxIndex(matrix) like in Task_2_3;
+        // create and use method FindFirstRowMaxIndex(matrix);
+        // create and use method SwapColumns(matrix, FindDiagonalMaxIndex, FindFirstRowMaxIndex);
+
+        // end
+    }
+
+
+    public void Task_3_10(ref int[,] matrix)
+    {
+        // FindIndex searchArea = default(FindIndex); - uncomment me
+
+        // code here
+
+        // create and use public delegate FindIndex(matrix);
+        // create and use method FindMaxBelowDiagonalIndex(matrix);
+        // create and use method FindMinAboveDiagonalIndex(matrix);
+        // use RemoveColumn(matrix, columnIndex) from Task_2_10
+        // create and use method RemoveColumns(matrix, findMaxBelowDiagonalIndex, findMinAboveDiagonalIndex)
+
+        // end
+    }
+
+
+    public void Task_3_22(int[,] matrix, out int[] rows, out int[] cols)
+    {
+
+        rows = null;
+        cols = null;
+
+        // code here
+
+        // create and use public delegate GetNegativeArray(matrix);
+        // use GetNegativeCountPerRow(matrix) from Task_2_22
+        // use GetMaxNegativePerColumn(matrix) from Task_2_22
+        // create and use method FindNegatives(matrix, searcherRows, searcherCols, out rows, out cols);
+
+        // end
+    }
+
+    public void Task_3_28a(int[] first, int[] second, ref int answerFirst, ref int answerSecond)
+    {
+        // code here
+
+        // create public delegate IsSequence(array, left, right);
+        // create and use method FindIncreasingSequence(array, A, B); similar to FindSequence(array, A, B) in Task_2_28a
+        // create and use method FindDecreasingSequence(array, A, B); similar to FindSequence(array, A, B) in Task_2_28a
+        // create and use method DefineSequence(array, findIncreasingSequence, findDecreasingSequence);
+
+        // end
+    }
+
+    public void Task_3_28c(int[] first, int[] second, ref int[] answerFirstIncrease, ref int[] answerFirstDecrease, ref int[] answerSecondIncrease, ref int[] answerSecondDecrease)
+    {
+        // code here
+
+        // create public delegate IsSequence(array, left, right);
+        // use method FindIncreasingSequence(array, A, B); from Task_3_28a
+        // use method FindDecreasingSequence(array, A, B); from Task_3_28a
+        // create and use method FindLongestSequence(array, sequence);
+
+        // end
+    }
+    
     #endregion
 }
+
